@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
-
-import '../theme/flex_theme_provider.dart';
+import 'package:mrzg_base_app/packages/theme/flex_theme_provider.dart';
 
 class MyBackButton extends StatelessWidget {
   const MyBackButton({
@@ -18,7 +17,6 @@ class MyBackButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final navigator = GoRouter.of(context);
-    // navigator.print(navigator.canPop());
     if (!navigator.canPop()) {
       return const SizedBox.shrink();
     }
